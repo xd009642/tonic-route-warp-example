@@ -1,0 +1,23 @@
+[package]
+name = "tonic-warp-example"
+version = "0.1.0"
+authors = ["Daniel McKenna <danielmckenna93@gmail.com>"]
+edition = "2018"
+publish = false
+license = "MIT"
+
+[dependencies]
+tonic = "0.2.0"
+prost = "0.6"
+futures = { version = "0.3", default-features = false, features = ["alloc"] }
+tokio = {version = "0.2", features = ["macros"]}
+tower = "0.3"
+hyper = "0.13"
+warp = { version = "0.2", default-features = false }
+http = "0.2"
+http-body = "0.3"
+pin-project = "0.4.17"
+tonic-health = "0.1"
+
+[build-dependencies]
+tonic-build = "0.2"
